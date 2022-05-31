@@ -5,4 +5,5 @@ def index(request):
   return render(request, 'index.html')
 
 def docs(request):
+  search = request.GET.get('search')
   return render(request, 'docs.html')
